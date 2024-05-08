@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">{"<E-Commerce />"}</div>
+  </div>
+
+  <HorizontalCard
+    title="Teslo"
+    img="/teslo.png"
+    desc="E-commerce created with Next.js and Typescript, Tailwindcss, Zustand, Prisma, Docker, PostgreSQL, Vercel Storage and more."
+    url="https://tesloo.vercel.app/"
+    badge="NEXT.JS"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Shoops Online"
+    img="/shoopsonline.png"
+    desc="Online store created using Wordpress and Woocommerce. Plugins for managing different currencies. Integration of payment gateways. Customization of checkout."
+    url="https://shoopsonline.com/productos/"
+    badge="WOOCOMMERCE"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">{"<LandingPage />"}</div>
+  </div>
+
+  <HorizontalCard
+    title="KRYPTO"
+    img="/krypto.png"
+    desc="Landing Page created with Vite, Typescript and Tailwindcss. React Hook Form is also implemented to subscribe to the newsletter. Design is performed in Figma."
+    url="https://krypto-omega.vercel.app/"
+    badge="TAILWINDCSS"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="We Bank"
+    img="/webank.png"
+    desc="Landing Page created with Vite, React, Typescript and Tailwindcss"
+    url="https://webank.vercel.app/"
+    badge="VITE"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Logística Bachi"
+    img="/bachi.png"
+    desc="Landing Page for mining logistics company created with React. Design with Figma."
+    url="https://www.logistica-bachi.com/"
+    badge="FEATURED"
+  />
+</BaseLayout>

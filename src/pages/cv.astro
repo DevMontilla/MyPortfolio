@@ -1,0 +1,157 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Web & mobile Developer with 3 years + of experience in the sector. Dominion
+    of programming languages, frameworks, ORM and graphical libraries. I enjoy
+    working with talented and ambitious teams. Constantly seeking to grow both
+    professionally and personally.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Fullstack Developer"
+      subtitle="From 04-2023 to 09-2023 at WeDoWeb, Argentina"
+    >
+      Web app development so users could see the status of their shipments. The
+      admin panel was developed with React, the backend with Node.js and the
+      client app was developed with Next.js. Data on the status of the shipment
+      was obtained through third-party webhook. Once in production I started
+      analyzing the status of your mobile app that had a dependency hell
+      problem. Hiring per project. By business decisions the client decided to
+      close the project.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Mobile & Frontend Developer"
+      subtitle="From 06-2022 to 03-2023 at FollowHub, Mendoza, Argentina"
+    >
+      I developed a mobile app using React Native for truck driver travel
+      management. Each driver could see cargo information, assigned truck and
+      source and destination data. GPS tracking of the trip eas performed minute
+      by minute Each user could modify the travel status according to the
+      circunstances of the journey. I deployed the app in the Play Store for
+      closed testing. At the same time, collaborate on the web development of
+      the administration application for companies to order, send and manage
+      loads.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Frontend & Mobile Developer"
+      subtitle="From 04-2021 to 05-2022 at Reanswer, Mendoza, Argentina"
+    >
+      I started developing components in React for a web app, two weeks later I
+      was part of the team that started a mobile app for a bank in Costa Rica
+      that awarded prizes to its customers as they used their services with an
+      arcade mode simulating a game of bingo. In the second month I became part
+      of the main project of the company called "REVAI" an app for medical
+      clinics that aims to be the portable medical history of each person, at
+      that time, especially focused on ophthalmological clinics. After a few
+      months working on the frontend, I was again part of a mobile development
+      team with React Native that was responsible for developing the app’s MVP
+      so patients could manage shifts, video call queries and the resolution of
+      questionnaires prior to the first consultation. Reanswer ceased operations
+      in May 2022.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Teaching Assistant"
+      subtitle="From 04-2021 to 12-2021 at Universidad Tecnológica Nacional, Bs. As., Argentina"
+    >
+      Assistant in initial programming course givin assistance to students about
+      doubts about HTML, CSS and Javascript, dictating small topics such as
+      communication between components of React, uses of basic hooks such as
+      useStateor useFormm and collaborating in the correction of final projects.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Frontend Developer"
+      subtitle="From 06-2020 to 03-2021 at iParking, Mendoza, Argentina"
+    >
+      Start Up. First work experience as a trainee. The first project in which I
+      collaborated consisted of a SCADA system for visualizing the state of the
+      gas network of the City of Paraná developed with React consuming data in
+      real time trough RethinkDB. In addition to developing reusable components
+      for the Data Display Board, I added the system landing page with Gastby.
+      Later I participated in the main project "iParking" collaborating in the
+      development of React components for payment checkout with cards. The
+      project ended without production in February 2021.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Full Stack Development"
+      subtitle="2019 to 2020 at Digital House, Mendoza, Argentina"
+    />
+    <TimeLineElement
+      title="Bachelor of Administration"
+      subtitle="2016 to 2019 at Universidad Nacional de Cuyo, Mendoza, Argentina"
+    />
+    <TimeLineElement
+      title="Bioengineering"
+      subtitle="2014 to 2015 at Universidad de Mendoza, Mendoza, Argentina"
+    />
+    <TimeLineElement
+      title="Technical in Automated Industrial Production"
+      subtitle="2011 to 2013 at Insituto Tecnológico Universitario, Mendoza, Argentina"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://cert.efset.org/g12Xfq" target="_blank">
+        EF SET English Certificate 67/100</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://ude.my/UC-f0e1e806-2b74-427c-94a2-a6e0034d3a6a/"
+        target="_blank"
+      >
+        UDEMY Next.js the React framework for production by Fernando Herrera</a
+      >
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Spanish (Native)</li>
+    <li>English (B1)</li>
+    <li>Javascript</li>
+    <li>Typescript</li>
+    <li>MySQL</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Node.js</li>
+    <li>React</li>
+    <li>Next.js</li>
+    <li>Redux</li>
+    <li>Zustand</li>
+    <li>Bootstrap</li>
+    <li>Tailwind</li>
+    <li>Git</li>
+    <li>Jira</li>
+    <li>Trello</li>
+    <li>Scrum</li>
+    <li>Wordpress</li>
+  </ul>
+</BaseLayout>
